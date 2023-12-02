@@ -11,6 +11,7 @@ import {
   Game_SelfSwitches,
   Game_Party,
   Game_Troop,
+  Game_Actors,
 } from "./rmmz_objects";
 
 export declare const $dataActors: RPG.DataActor[];
@@ -38,7 +39,7 @@ export declare const $gameMessage: Game_Message;
 export declare const $gameSwitches: Game_Switches;
 export declare const $gameVariables: Game_Variables;
 export declare const $gameSelfSwitches: Game_SelfSwitches;
-// export declare const $gameActors: Game_Actors;
+export declare const $gameActors: Game_Actors;
 export declare const $gameParty: Game_Party;
 export declare const $gameTroop: Game_Troop;
 // export declare const $gameMap: Game_Map;
