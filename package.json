@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "docs": "webdoc -R README.md",
-    "lint": "eslint lib/rmmz** lib/*.ts",
+    "lint": "eslint lib/rmmz*/*.ts lib/*.ts",
     "lint:fix": "npm run lint --fix"
   },
   "types": "./lib/index.d.ts",

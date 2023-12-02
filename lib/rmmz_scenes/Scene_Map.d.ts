@@ -11,7 +11,7 @@ declare class Scene_Map extends Scene_Message {
   protected _menuEnabled: boolean;
   protected _transfer: boolean;
   protected _lasMapWasNull: boolean;
-  protected _spriteset: Spriteset_Map;
+  // protected _spriteset: Spriteset_Map;
   protected _mapNameWindow: Window_MapName;
   protected _menuButton: Sprite_Button;
 
