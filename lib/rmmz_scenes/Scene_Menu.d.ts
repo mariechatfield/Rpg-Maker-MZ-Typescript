@@ -1,54 +1,56 @@
-import {Scene_MenuBase} from ".";
-import {Window_Gold, Window_MenuCommand, Window_MenuStatus} from "../rmmz_windows";
-import {Rectangle} from "../rmmz_core";
-
+import { Scene_MenuBase } from ".";
+import {
+  Window_Gold,
+  Window_MenuCommand,
+  Window_MenuStatus,
+} from "../rmmz_windows";
+import { Rectangle } from "../rmmz_core";
 
 declare class Scene_Menu extends Scene_MenuBase {
+  protected _commandWindow: Window_MenuCommand<any>; // TODO fix the typing?
+  protected _goldWindow: Window_Gold;
+  protected _statusWindow: Window_MenuStatus;
 
-    protected _commandWindow: Window_MenuCommand<any>; // TODO fix the typing?
-    protected _goldWindow: Window_Gold;
-    protected _statusWindow: Window_MenuStatus;
+  constructor();
 
-    constructor();
+  public initialize(): void;
 
-    public initialize(): void;
+  public create(): void;
 
-    public create(): void;
+  public start(): void;
 
-    public start(): void;
+  public createCommandWindow(): void;
 
-    public createCommandWindow(): void;
+  public commandWindowRect(): Rectangle;
 
-    public commandWindowRect(): Rectangle;
+  public createGoldWindow(): void;
 
-    public createGoldWindow(): void;
+  public goldWindowRect(): Rectangle;
 
-    public goldWindowRect(): Rectangle;
+  public createStatusWindow(): void;
 
-    public createStatusWindow(): void;
+  public statusWindowRect(): Rectangle;
 
-    public statusWindowRect(): Rectangle;
+  public commandItem(): void;
 
-    public commandItem(): void;
+  public commandPersonal(): void;
 
-    public commandPersonal(): void;
+  public commandFormation(): void;
+  public commandFormation(): void;
 
-    public commandFormation(): void;
-    public commandFormation(): void;
+  public commandOptions(): void;
 
-    public commandOptions(): void;
+  public commandSave(): void;
 
-    public commandSave(): void;
+  public commandGameEnd(): void;
 
-    public commandGameEnd(): void;
+  public onPersonalOk(): void;
 
-    public onPersonalOk(): void;
+  public onPersonalCancel(): void;
 
-    public onPersonalCancel(): void;
+  public onFormationOk(): void;
 
-    public onFormationOk(): void;
-
-    public onFormationCancel(): void;
+  public onFormationCancel(): void;
 }
 
-export {Scene_Menu}
+export { Scene_Menu };

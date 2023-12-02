@@ -3,14 +3,14 @@ import { Rectangle } from "../rmmz_core";
 
 /**
  * Window_BattleItem
- * 
+ *
  * The window for selecting an item to use on the battle screen.
  */
 declare class Window_BattleItem extends Window_ItemList {
-    constructor(rect: Rectangle);
-    public includes(item: Record<string, any>): boolean;
-    public show(): void;
-    public hide(): void;
+  constructor(rect: Rectangle);
+  public includes(item: Record<string, any>): boolean;
+  public show(): void;
+  public hide(): void;
 }
 
-export { Window_BattleItem }
+export { Window_BattleItem };

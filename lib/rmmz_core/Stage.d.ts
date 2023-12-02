@@ -1,9 +1,9 @@
 import * as PIXI from "pixi.js";
 
 declare class Stage extends PIXI.Container {
-    constructor();
+  constructor();
 
-    public destroy(): void;
+  public destroy(): void;
 }
 
 export { Stage };

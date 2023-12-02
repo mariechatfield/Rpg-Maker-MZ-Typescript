@@ -4,14 +4,14 @@ import { Game_Actor } from "../rmmz_objects";
 
 /**
  * Window_SkillStatus
- * 
+ *
  * The window for displaying the skill user's status on the skill screen.
  */
 declare class Window_SkillStatus extends Window_StatusBase {
-    constructor(rect: Rectangle);
+  constructor(rect: Rectangle);
 
-    public setActor(actor: Game_Actor): void;
-    public refresh(): void;
+  public setActor(actor: Game_Actor): void;
+  public refresh(): void;
 }
 
-export { Window_SkillStatus }
+export { Window_SkillStatus };

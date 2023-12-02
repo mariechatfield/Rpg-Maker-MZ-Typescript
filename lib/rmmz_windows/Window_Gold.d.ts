@@ -3,17 +3,17 @@ import { Rectangle } from "../rmmz_core";
 
 /**
  * Window_Gold
- * 
+ *
  * The window for displaying the party's gold.
  */
 declare class Window_Gold extends Window_Selectable {
-    constructor(rect: Rectangle);
+  constructor(rect: Rectangle);
 
-    public colSpacing(): number;
-    public refresh(): void;
-    public value(): number;
-    public currencyUnit(): string;
-    public open(): void;
+  public colSpacing(): number;
+  public refresh(): void;
+  public value(): number;
+  public currencyUnit(): string;
+  public open(): void;
 }
 
-export { Window_Gold }
+export { Window_Gold };

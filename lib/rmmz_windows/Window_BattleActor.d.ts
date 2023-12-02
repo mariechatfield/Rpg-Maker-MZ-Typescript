@@ -3,16 +3,16 @@ import { Rectangle } from "../rmmz_core";
 
 /**
  * Window_BattleActor
- * 
+ *
  * The window for selecting a target actor on the battle screen.
  */
 declare class Window_BattleActor extends Window_BattleStatus {
-    constructor(rect: Rectangle);
+  constructor(rect: Rectangle);
 
-    public show(): void;
-    public hide(): void;
-    public select(index: number): void;
-    public processTouch(): void;
+  public show(): void;
+  public hide(): void;
+  public select(index: number): void;
+  public processTouch(): void;
 }
 
-export { Window_BattleActor }
+export { Window_BattleActor };

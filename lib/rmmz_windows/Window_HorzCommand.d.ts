@@ -3,14 +3,14 @@ import { Rectangle } from "../rmmz_core";
 
 /**
  * Window_HorzCommand
- * 
+ *
  * The command window for the horizontal selection format.
  */
 declare class Window_HorzCommand<T> extends Window_Command<T> {
-    constructor(rect: Rectangle);
+  constructor(rect: Rectangle);
 
-    public maxCols(): number;
-    public itemTextAlign(): string;
+  public maxCols(): number;
+  public itemTextAlign(): string;
 }
 
-export { Window_HorzCommand }
+export { Window_HorzCommand };

@@ -1,58 +1,57 @@
-import {Scene_Base} from ".";
+import { Scene_Base } from ".";
 import {
-    Window_ChoiceList,
-    Window_EventItem,
-    Window_Gold,
-    Window_Message,
-    Window_NameBox,
-    Window_NumberInput,
-    Window_ScrollText
+  Window_ChoiceList,
+  Window_EventItem,
+  Window_Gold,
+  Window_Message,
+  Window_NameBox,
+  Window_NumberInput,
+  Window_ScrollText,
 } from "../rmmz_windows";
-import {Rectangle} from "../rmmz_core";
+import { Rectangle } from "../rmmz_core";
 
 declare class Scene_Message extends Scene_Base {
+  protected _messageWindow: Window_Message;
+  protected _scrollTextWindow: Window_ScrollText;
+  protected _goldWindow: Window_Gold;
+  protected _nameBoxWindow: Window_NameBox;
+  protected _choiceListWindow: Window_ChoiceList<any>;
+  protected _numberInputWindow: Window_NumberInput;
+  protected _eventItemWindow: Window_EventItem;
 
-    protected _messageWindow: Window_Message;
-    protected _scrollTextWindow: Window_ScrollText;
-    protected _goldWindow: Window_Gold;
-    protected _nameBoxWindow: Window_NameBox;
-    protected _choiceListWindow: Window_ChoiceList<any>;
-    protected _numberInputWindow: Window_NumberInput;
-    protected _eventItemWindow: Window_EventItem;
+  constructor(...arguments: never[]);
 
-    constructor(...arguments: never[]);
+  public initialize(): void;
 
-    public initialize(): void;
+  public isMessageWindowClosing(): boolean;
 
-    public isMessageWindowClosing(): boolean;
+  public createAllWindows(): void;
 
-    public createAllWindows(): void;
+  public createMessageWindow(): void;
 
-    public createMessageWindow(): void;
+  public messageWindowRect(): Rectangle;
 
-    public messageWindowRect(): Rectangle;
+  public createScrollTextWindow(): void;
 
-    public createScrollTextWindow(): void;
+  public scrollTextWindowRect(): Rectangle;
 
-    public scrollTextWindowRect(): Rectangle;
+  public createGoldWindow(): void;
 
-    public createGoldWindow(): void;
+  public goldWindowRect(): Rectangle;
 
-    public goldWindowRect(): Rectangle;
+  public createNameBoxWindow(): void;
 
-    public createNameBoxWindow(): void;
+  public createChoiceListWindow(): void;
 
-    public createChoiceListWindow(): void;
+  public createNumberInputWindow(): void;
 
-    public createNumberInputWindow(): void;
+  public createEventItemWindow(): void;
 
-    public createEventItemWindow(): void;
+  public eventItemWindowRect(): Rectangle;
 
-    public eventItemWindowRect(): Rectangle;
+  public associateWindows(): void;
 
-    public associateWindows(): void;
-
-    public create(): void;
+  public create(): void;
 }
 
-export {Scene_Message}
+export { Scene_Message };

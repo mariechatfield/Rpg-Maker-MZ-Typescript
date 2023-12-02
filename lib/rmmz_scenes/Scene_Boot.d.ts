@@ -1,43 +1,41 @@
-import {Scene_Base} from ".";
-
+import { Scene_Base } from ".";
 
 declare class Scene_Boot extends Scene_Base {
+  protected _databaseLoaded: boolean;
 
-    protected _databaseLoaded: boolean;
+  constructor(...arguments: never[]);
 
-    constructor(...arguments: never[]);
+  public initialize(): void;
 
-    public initialize(): void;
+  public create(): void;
 
-    public create(): void;
+  public isReady(): boolean;
 
-    public isReady(): boolean;
+  public onDatabaseLoaded(): void;
 
-    public onDatabaseLoaded(): void;
+  public setEncryptionInfo(): void;
 
-    public setEncryptionInfo(): void;
+  public loadSystemImages(): void;
 
-    public loadSystemImages(): void;
+  public loadPlayerData(): void;
 
-    public loadPlayerData(): void;
+  public loadGameFonts(): void;
 
-    public loadGameFonts(): void;
+  public isPlayerDataLoaded(): void;
 
-    public isPlayerDataLoaded(): void;
+  public start(): void;
 
-    public start(): void;
+  public startNormalGame(): void;
 
-    public startNormalGame(): void;
+  public resizeScreen(): void;
 
-    public resizeScreen(): void;
+  public adjustBoxSize(): void;
 
-    public adjustBoxSize(): void;
+  public adjustWindow(): void;
 
-    public adjustWindow(): void;
+  public updateDocumentTitle(): void;
 
-    public updateDocumentTitle(): void;
-
-    public checkPlayerLocation(): void;
+  public checkPlayerLocation(): void;
 }
 
-export {Scene_Boot}
+export { Scene_Boot };

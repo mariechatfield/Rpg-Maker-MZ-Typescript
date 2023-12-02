@@ -2,33 +2,35 @@
  * @author Brandt (Masked)
  */
 
-import { Spriteset_Base, Sprite_Battler } from '.';
+import { Spriteset_Base, Sprite_Battler } from ".";
 
 import { Game_Battler } from "../rmmz_objects";
 
-declare class Spriteset_Battle extends Spriteset_Base<Game_Battler, Sprite_Battler> {
+declare class Spriteset_Battle extends Spriteset_Base<
+  Game_Battler,
+  Sprite_Battler
+> {
+  constructor();
 
-    constructor();
+  public createBackground(): void;
+  public createBattleback(): void;
+  public createBattleField(): void;
 
-    public createBackground(): void;
-    public createBattleback(): void;
-    public createBattleField(): void;
+  public battleFieldOffsetY(): number;
 
-    public battleFieldOffsetY(): number;
+  public updateBattleback(): void;
 
-    public updateBattleback(): void;
+  public createEnemies(): void;
+  public compareEnemySprite(a: Sprite_Battler, b: Sprite_Battler): number;
 
-    public createEnemies(): void;
-    public compareEnemySprite(a: Sprite_Battler, b: Sprite_Battler): number;
+  public createActors(): void;
+  public updateActors(): void;
 
-    public createActors(): void;
-    public updateActors(): void;
+  public battlerSprites(): Sprite_Battler[];
 
-    public battlerSprites(): Sprite_Battler[];
-
-    public isEffecting(): boolean;
-    public isAnyoneMoving(): boolean;
-    public isBusy(): boolean;
+  public isEffecting(): boolean;
+  public isAnyoneMoving(): boolean;
+  public isBusy(): boolean;
 }
 
 export { Spriteset_Battle };
