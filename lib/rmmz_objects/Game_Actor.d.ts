@@ -7,6 +7,7 @@ declare class Game_Actor extends Game_Battler {
 
   constructor(actorId: number);
 
+  public initialize(actorId: number): void;
   public setup(actorId: number): void;
 
   public actorId(): number;
@@ -59,7 +60,7 @@ declare class Game_Actor extends Game_Battler {
   public forceChangeEquip(slotId: number, item: RPG.DataEquipItem): void;
   public tradeItemWithParty(
     newItem: RPG.DataEquipItem,
-    oldItem: RPG.DataEquipItem,
+    oldItem: RPG.DataEquipItem
   ): boolean;
 
   public changeEquipById(etypeId: number, itemId: number): void;

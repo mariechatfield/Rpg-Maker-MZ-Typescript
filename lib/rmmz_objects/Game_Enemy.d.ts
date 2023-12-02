@@ -13,6 +13,7 @@ declare namespace Game_Enemy {
 declare class Game_Enemy extends Game_Battler {
   constructor(enemyId: number, x: number, y: number);
 
+  public initialize(enemyId: number, x: number, y: number): void;
   public setup(enemyId: number, x: number, y: number): void;
 
   public isEnemy(): true;
@@ -35,7 +36,7 @@ declare class Game_Enemy extends Game_Battler {
 
   public itemObject(
     kind: Game_Enemy.ItemKind,
-    dataId: number,
+    dataId: number
   ): RPG.DataItemBase;
 
   public isSpriteVisible(): boolean;
@@ -67,7 +68,7 @@ declare class Game_Enemy extends Game_Battler {
 
   public selectAction(
     actionList: Game_Action[],
-    ratingZero: number,
+    ratingZero: number
   ): Game_Action | null;
   public selectAllActions(actionList: Game_Action[]): void;
 }
