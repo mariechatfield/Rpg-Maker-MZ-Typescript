@@ -3,6 +3,7 @@ declare namespace RPG {
     id: number;
     name: string;
     note: string;
+    meta?: object;
   }
 
   export interface DataActor extends Data {
