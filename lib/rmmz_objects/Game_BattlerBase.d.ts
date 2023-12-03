@@ -148,6 +148,10 @@ declare class Game_BattlerBase {
 
   constructor();
 
+  public _hp: number;
+  public _mp: number;
+  public _tp: number;
+
   public readonly hp: number;
   public readonly mp: number;
   public readonly tp: number;
@@ -216,7 +220,7 @@ declare class Game_BattlerBase {
 
   public overwriteBuffTurns(
     paramId: Game_BattlerBase.Params,
-    turns: number,
+    turns: number
   ): void;
 
   public isBuffExpired(paramId: Game_BattlerBase.Params): boolean;
@@ -232,7 +236,7 @@ declare class Game_BattlerBase {
 
   public buffIconIndex(
     buffLevel: number,
-    paramId: Game_BattlerBase.Params,
+    paramId: Game_BattlerBase.Params
   ): number;
 
   public allIcons(): number[];
