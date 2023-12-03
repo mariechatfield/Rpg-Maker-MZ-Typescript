@@ -20,9 +20,6 @@ declare class Game_Character extends Game_CharacterBase {
   public _lastMenuSkill: Game_Item;
   public _lastBattleSkill: Game_Item;
   public _lastCommandSymbol: string;
-
-  public actorId(): number;
-  public actor(): RPG.DataActor;
 }
 
 export { Game_Character };
