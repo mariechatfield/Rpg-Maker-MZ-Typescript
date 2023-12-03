@@ -1,5 +1,5 @@
 import { Game_Battler } from "../rmmz_objects";
-import { Sprite_Battler } from "../rmmz_sprites";
+import { Sprite_Battler } from ".";
 
 declare interface Motion {
   index: number;

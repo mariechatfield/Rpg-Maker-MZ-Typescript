@@ -1,5 +1,5 @@
 import { Game_Battler } from "../rmmz_objects";
-import { Sprite_Battler, Sprite_StateIcon } from "../rmmz_sprites";
+import { Sprite_Battler, Sprite_StateIcon } from ".";
 
 declare class Sprite_Enemy extends Sprite_Battler {
   public _enemy: Game_Battler | null;
