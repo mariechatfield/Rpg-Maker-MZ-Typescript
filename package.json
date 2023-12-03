@@ -4,7 +4,8 @@
   "description": "Type definitions for the RPG Maker MZ core script",
   "main": "dist/rmmz.js",
   "files": [
-    "lib"
+    "lib",
+    "dist/rmmz.js"
   ],
   "scripts": {
     "build": "tsc lib/rmmz.ts --outDir dist/",
