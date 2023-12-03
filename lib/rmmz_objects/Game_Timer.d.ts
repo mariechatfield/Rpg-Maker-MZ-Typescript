@@ -1,6 +1,6 @@
 declare class Game_Timer {
-  private _frames: number;
-  private _working: boolean;
+  public _frames: number;
+  public _working: boolean;
   constructor();
 
   public initialize(): void;

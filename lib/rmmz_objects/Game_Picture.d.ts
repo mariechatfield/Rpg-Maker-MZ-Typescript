@@ -1,23 +1,23 @@
 declare class Game_Picture {
-  private _name: string;
-  private _origin: number;
-  private _x: number;
-  private _y: number;
-  private _scaleX: number;
-  private _scaleY: number;
-  private _opacity: number;
-  private _blendMode: number;
-  private _tone: number[];
-  private _angle: number;
-  private _targetScaleX: number;
-  private _targetScaleY: number;
-  private _targetOpacity: number;
-  private _wholeDuration: number;
-  private _easingType: number;
-  private _easingExponent: number;
-  private _toneTarget: number[];
-  private _toneDuration: number;
-  private _rotationSpeed: number;
+  public _name: string;
+  public _origin: number;
+  public _x: number;
+  public _y: number;
+  public _scaleX: number;
+  public _scaleY: number;
+  public _opacity: number;
+  public _blendMode: number;
+  public _tone: number[];
+  public _angle: number;
+  public _targetScaleX: number;
+  public _targetScaleY: number;
+  public _targetOpacity: number;
+  public _wholeDuration: number;
+  public _easingType: number;
+  public _easingExponent: number;
+  public _toneTarget: number[];
+  public _toneDuration: number;
+  public _rotationSpeed: number;
 
   constructor();
 
@@ -44,7 +44,7 @@ declare class Game_Picture {
     scaleX: number,
     scaleY: number,
     opacity: number,
-    blendMode: number,
+    blendMode: number
   ): void;
   public move(
     origin: number,
@@ -55,7 +55,7 @@ declare class Game_Picture {
     opacity: number,
     blendMode: number,
     duration: number,
-    easingType: number,
+    easingType: number
   ): void;
   public rotate(speed: number): void;
   public tint(tone: number[], duration: number): void;

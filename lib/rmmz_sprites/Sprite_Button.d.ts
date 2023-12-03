@@ -14,10 +14,10 @@ declare interface ButtonTable {
   menu: { x: 10; w: 1 };
 }
 declare class Sprite_Button extends Sprite_Clickable {
-  private _buttonType: string;
-  private _clickHandler: Function;
-  private _coldFrame: Rectangle;
-  private _hotFrame: Rectangle;
+  public _buttonType: string;
+  public _clickHandler: Function;
+  public _coldFrame: Rectangle;
+  public _hotFrame: Rectangle;
 
   constructor(buttonType: string);
 
@@ -34,7 +34,7 @@ declare class Sprite_Button extends Sprite_Clickable {
     x: number,
     y: number,
     width: number,
-    height: number,
+    height: number
   ): void;
   public setHotFrame(x: number, y: number, width: number, height: number): void;
   public setClickHandler(method: Function): void;

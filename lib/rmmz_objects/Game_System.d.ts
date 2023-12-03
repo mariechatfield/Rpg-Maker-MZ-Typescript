@@ -1,25 +1,25 @@
 import { AudioManager } from "../rmmz_managers";
 
 declare class Game_System {
-  private _saveEnabled: boolean;
-  private _menuEnabled: boolean;
-  private _encounterEnabled: boolean;
-  private _formationEnabled: boolean;
-  private _battleCount: number;
-  private _winCount: number;
-  private _escapeCount: number;
-  private _saveCount: number;
-  private _versionId: number;
-  private _savefileId: number;
-  private _framesOnSave: number;
-  private _bgmOnSave: AudioManager.CurrentAudio;
-  private _bgsOnSave: AudioManager.CurrentAudio;
-  private _windowTone: number[];
-  private _battleBgm: AudioManager.CurrentAudio;
-  private _victoryMe: AudioManager.CurrentAudio;
-  private _defeatMe: AudioManager.CurrentAudio;
-  private _savedBgm: AudioManager.CurrentAudio;
-  private _walkingBgm: AudioManager.CurrentAudio;
+  public _saveEnabled: boolean;
+  public _menuEnabled: boolean;
+  public _encounterEnabled: boolean;
+  public _formationEnabled: boolean;
+  public _battleCount: number;
+  public _winCount: number;
+  public _escapeCount: number;
+  public _saveCount: number;
+  public _versionId: number;
+  public _savefileId: number;
+  public _framesOnSave: number;
+  public _bgmOnSave: AudioManager.CurrentAudio;
+  public _bgsOnSave: AudioManager.CurrentAudio;
+  public _windowTone: number[];
+  public _battleBgm: AudioManager.CurrentAudio;
+  public _victoryMe: AudioManager.CurrentAudio;
+  public _defeatMe: AudioManager.CurrentAudio;
+  public _savedBgm: AudioManager.CurrentAudio;
+  public _walkingBgm: AudioManager.CurrentAudio;
 
   constructor();
   public initialize(): void;

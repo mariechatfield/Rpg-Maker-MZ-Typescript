@@ -1,8 +1,8 @@
 import { RPG } from "../RPG";
 
 declare class Game_Item {
-  private _dataClass: string;
-  private _itemId: number;
+  public _dataClass: string;
+  public _itemId: number;
 
   constructor();
 

@@ -1,5 +1,5 @@
 declare class Game_Switches {
-  private _data: boolean[];
+  public _data: boolean[];
 
   constructor();
 

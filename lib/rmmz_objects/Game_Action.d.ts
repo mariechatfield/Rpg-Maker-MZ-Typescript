@@ -20,11 +20,11 @@ declare class Game_Action {
   public readonly HITTYPE_PHYSICAL: number;
   public readonly HITTYPE_MAGICAL: number;
 
-  private _subjectActorId: number;
-  private _subjectEnemyIndex: number;
-  private _forcing: boolean;
-  private _item: Game_Item;
-  private _targetIndex: number;
+  public _subjectActorId: number;
+  public _subjectEnemyIndex: number;
+  public _forcing: boolean;
+  public _item: Game_Item;
+  public _targetIndex: number;
 
   constructor(subject: Game_BattlerBase, forcing: boolean);
 

@@ -1,24 +1,24 @@
 declare class Game_Message {
-  private _texts: string[];
-  private _choices: string[];
-  private _speakerName: string;
-  private _faceName: string;
-  private _faceIndex: number;
-  private _background: number;
-  private _positionType: number;
-  private _choiceDefaultType: number;
-  private _choiceCancelType: number;
-  private _choiceBackground: number;
-  private _choicePositionType: number;
-  private _numInputVariableId: number;
-  private _numInputMaxDigits: number;
-  private _itemChoiceVariableId: number;
-  private _itemChoiceItypeId: number;
-  private _scrollMode: boolean;
-  private _scrollSpeed: number;
-  private _scrollNoFast: boolean;
+  public _texts: string[];
+  public _choices: string[];
+  public _speakerName: string;
+  public _faceName: string;
+  public _faceIndex: number;
+  public _background: number;
+  public _positionType: number;
+  public _choiceDefaultType: number;
+  public _choiceCancelType: number;
+  public _choiceBackground: number;
+  public _choicePositionType: number;
+  public _numInputVariableId: number;
+  public _numInputMaxDigits: number;
+  public _itemChoiceVariableId: number;
+  public _itemChoiceItypeId: number;
+  public _scrollMode: boolean;
+  public _scrollSpeed: number;
+  public _scrollNoFast: boolean;
   // eslint-disable-next-line @typescript-eslint/ban-types
-  private _choiceCallback: Function;
+  public _choiceCallback: Function;
 
   constructor();
 
@@ -49,7 +49,7 @@ declare class Game_Message {
   public setChoices(
     choices: string[],
     defaultType: number,
-    cancelType: number,
+    cancelType: number
   ): void;
   public setChoiceBackground(background: number): void;
   public setChoicePositionType(positionType: number): void;

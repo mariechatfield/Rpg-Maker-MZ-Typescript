@@ -2,14 +2,14 @@ import { Game_Battler } from "../rmmz_objects";
 import { Sprite_Battler, Sprite_StateIcon } from "../rmmz_sprites";
 
 declare class Sprite_Enemy extends Sprite_Battler {
-  private _enemy: Game_Battler | null;
-  private _appeared: boolean;
-  private _battlerName: string | null;
-  private _battlerHue: number;
-  private _effectType: Game_Battler.EffectType | null;
-  private _effectDuration: number;
-  private _shake: number;
-  private _stateIconSprite: Sprite_StateIcon;
+  public _enemy: Game_Battler | null;
+  public _appeared: boolean;
+  public _battlerName: string | null;
+  public _battlerHue: number;
+  public _effectType: Game_Battler.EffectType | null;
+  public _effectDuration: number;
+  public _shake: number;
+  public _stateIconSprite: Sprite_StateIcon;
 
   public loadBitmap(): void;
 

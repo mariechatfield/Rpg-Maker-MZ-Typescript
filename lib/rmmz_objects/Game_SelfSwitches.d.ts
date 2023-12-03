@@ -5,7 +5,7 @@ interface selfSwitches {
   D: boolean;
 }
 declare class Game_SelfSwitches {
-  private _data: selfSwitches;
+  public _data: selfSwitches;
 
   constructor();
 

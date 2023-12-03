@@ -1,16 +1,16 @@
 import { RPG } from "../RPG";
 
 declare class Game_Temp {
-  private _isPlaytest: boolean;
-  private _destinationX: number;
-  private _destinationY: number;
-  private _touchTarget: unknown;
-  private _touchState: string;
-  private _needBattleRefresh: boolean;
-  private _commonEventQueue: unknown[];
-  private _animationQueue: unknown[];
-  private _balloonQueue: unknown[];
-  private _lastActionData: number[];
+  public _isPlaytest: boolean;
+  public _destinationX: number;
+  public _destinationY: number;
+  public _touchTarget: unknown;
+  public _touchState: string;
+  public _needBattleRefresh: boolean;
+  public _commonEventQueue: unknown[];
+  public _animationQueue: unknown[];
+  public _balloonQueue: unknown[];
+  public _lastActionData: number[];
 
   constructor();
 
@@ -34,7 +34,7 @@ declare class Game_Temp {
   public requestAnimation(
     targets: unknown,
     animationId: number,
-    mirror?: boolean,
+    mirror?: boolean
   ): void;
   public retrieveAnimation(): unknown;
   public requestBalloon(target: unknown, balloonId: number): void;

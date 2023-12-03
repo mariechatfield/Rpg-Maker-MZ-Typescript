@@ -1,8 +1,8 @@
 import { Sprite, Rectangle } from "../rmmz_core";
 
 declare abstract class Sprite_Clickable extends Sprite {
-  private _pressed: boolean;
-  private _hovered: boolean;
+  public _pressed: boolean;
+  public _hovered: boolean;
 
   constructor();
 

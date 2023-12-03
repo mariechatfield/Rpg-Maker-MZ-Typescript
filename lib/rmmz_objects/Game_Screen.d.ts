@@ -1,35 +1,35 @@
 import { Game_Picture } from "./Game_Picture";
 
 declare class Game_Screen {
-  private _brightness: number;
-  private _fadeOutDuration: number;
-  private _fadeInDuration: number;
+  public _brightness: number;
+  public _fadeOutDuration: number;
+  public _fadeInDuration: number;
 
-  private _tone: number[];
-  private _toneTarget: number[];
-  private _toneDuration: number;
+  public _tone: number[];
+  public _toneTarget: number[];
+  public _toneDuration: number;
 
-  private _flashColor: number[];
-  private _flashDuration: number;
+  public _flashColor: number[];
+  public _flashDuration: number;
 
-  private _shake: number;
-  private _shakePower: number;
-  private _shakeSpeed: number;
-  private _shakeDuration: number;
-  private _shakeDirection: number;
+  public _shake: number;
+  public _shakePower: number;
+  public _shakeSpeed: number;
+  public _shakeDuration: number;
+  public _shakeDirection: number;
 
-  private _zoomX: number;
-  private _zoomY: number;
-  private _zoomScale: number;
-  private _zoomScaleTarget: number;
-  private _zoomDuration: number;
+  public _zoomX: number;
+  public _zoomY: number;
+  public _zoomScale: number;
+  public _zoomScaleTarget: number;
+  public _zoomDuration: number;
 
-  private _weatherType: string;
-  private _weatherPower: number;
-  private _weatherPowerTarget: number;
-  private _weatherDuration: number;
+  public _weatherType: string;
+  public _weatherPower: number;
+  public _weatherPowerTarget: number;
+  public _weatherDuration: number;
 
-  private _pictures /*: Game_Pictures[]*/; // FIXME
+  public _pictures /*: Game_Pictures[]*/; // FIXME
 
   constructor();
   public initialize(): void;
@@ -82,7 +82,7 @@ declare class Game_Screen {
     scaleX: number,
     scaleY: number,
     opacity: number,
-    blendMode: number,
+    blendMode: number
   ): void;
   public movePicture(
     pictureId: number,
@@ -95,7 +95,7 @@ declare class Game_Screen {
     opacity: number,
     blendMode: number,
     duration: number,
-    easingType: number,
+    easingType: number
   ): void;
   public rotatePicture(pictureId: number, speed: number): void;
   public tintPicture(pictureId: number, tone: number[], duration: number): void;

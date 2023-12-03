@@ -9,10 +9,10 @@ declare interface Motion {
 declare class Sprite_Actor extends Sprite_Battler {
   public readonly MOTIONS: Record<Game_Battler.MotionType, Motion>;
 
-  private _battlerName: string;
-  private _motion: Game_Battler.MotionType;
-  private _motionCount: number;
-  private _pattern: number;
+  public _battlerName: string;
+  public _motion: Game_Battler.MotionType;
+  public _motionCount: number;
+  public _pattern: number;
 
   public createStateSprite(): void;
 

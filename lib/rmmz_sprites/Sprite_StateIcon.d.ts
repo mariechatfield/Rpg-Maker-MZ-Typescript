@@ -2,10 +2,10 @@ import { Sprite } from "../rmmz_core";
 import { Game_Battler } from "../rmmz_objects";
 
 declare class Sprite_StateIcon extends Sprite {
-  private _battler: Game_Battler | null;
-  private _iconIndex: number;
-  private _animationCount: number;
-  private _animationIndex: number;
+  public _battler: Game_Battler | null;
+  public _iconIndex: number;
+  public _animationCount: number;
+  public _animationIndex: number;
 
   public initMember(): void;
   public loadBitmap(): void;

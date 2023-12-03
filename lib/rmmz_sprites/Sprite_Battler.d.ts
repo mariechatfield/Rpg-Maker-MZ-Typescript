@@ -7,16 +7,16 @@ import { Sprite_Clickable, Sprite_Damage } from ".";
 declare class Sprite_Battler extends Sprite_Clickable {
   constructor(battler: Game_Battler);
 
-  private _battler: Game_Battler;
-  private _damages: Sprite_Damage[];
-  private _homeX: number;
-  private _homeY: number;
-  private _offsetX: number;
-  private _offsetY: number;
-  private _targetOffsetX: number;
-  private _targetOffsetY: number;
-  private _movementDuration: number;
-  private _selectionEffectCount: number;
+  public _battler: Game_Battler;
+  public _damages: Sprite_Damage[];
+  public _homeX: number;
+  public _homeY: number;
+  public _offsetX: number;
+  public _offsetY: number;
+  public _targetOffsetX: number;
+  public _targetOffsetY: number;
+  public _movementDuration: number;
+  public _selectionEffectCount: number;
 
   public initMembers(): void;
 

@@ -1,5 +1,5 @@
 declare class Game_Variables {
-  private _data: number[];
+  public _data: number[];
   constructor();
 
   public initialize(): void;
