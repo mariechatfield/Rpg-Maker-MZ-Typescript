@@ -1,3 +1,4 @@
+export * from "./rmmz";
 export * from "./RPG";
 
 export * from "./rmmz_core";
