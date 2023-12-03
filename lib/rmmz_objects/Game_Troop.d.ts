@@ -24,7 +24,7 @@ declare class Game_Troop extends Game_Unit<Game_Enemy> {
   public letterTable(): string[];
   public enemyNames(): string[];
 
-  public meetsConditions(page: RPG.Page): boolean;
+  public meetsConditions(page: RPG.Page<RPG.TroopConditions>): boolean;
   public setupBattleEvent(): void;
 
   public increaseTurn(): void;

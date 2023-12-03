@@ -98,7 +98,7 @@ declare namespace RPG {
     id: number;
     members: Member[];
     name: string;
-    pages: Page[];
+    pages: Page<TroopConditions>[];
   }
 
   export interface DataState extends Data {
@@ -266,12 +266,12 @@ declare namespace RPG {
   }
 
   export interface Event extends Data {
-    pages: Page[];
+    pages: Page<EventConditions>[];
     x: number;
     y: number;
   }
 
-  export interface Page {
+  export interface Page<Conditions> {
     conditions: Conditions;
     directionFix: boolean;
     image: Image;
@@ -287,7 +287,7 @@ declare namespace RPG {
     walkAnime: boolean;
   }
 
-  export interface Conditions {
+  export interface EventConditions {
     actorId: number;
     actorValid: boolean;
     itemId: number;
@@ -428,7 +428,7 @@ declare namespace RPG {
     hidden: boolean;
   }
 
-  export interface Conditions {
+  export interface TroopConditions {
     actorHp: number;
     actorId: number;
     actorValid: boolean;
