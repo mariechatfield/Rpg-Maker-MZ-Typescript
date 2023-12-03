@@ -1,3 +1,11 @@
+import { PageMoveSpeed, PageMoveType } from "./constants/page";
+import {
+  AnimationPattern,
+  CharacterIndex,
+  Direction,
+  FaceIndex,
+} from "./constants/sprites";
+
 declare namespace RPG {
   export interface Data {
     id: number;
@@ -7,11 +15,11 @@ declare namespace RPG {
 
   export interface DataActor extends Data {
     battlerName: string;
-    characterIndex: number;
+    characterIndex: CharacterIndex;
     characterName: string;
     classId: number;
     equips: number[];
-    faceIndex: number;
+    faceIndex: FaceIndex;
     faceName: string;
     traits: Trait[];
     initialLevel: number;
@@ -277,8 +285,8 @@ declare namespace RPG {
     list: PageList[];
     moveFrequency: number;
     moveRoute: MoveRoute;
-    moveSpeed: number;
-    moveType: number;
+    moveSpeed: PageMoveSpeed;
+    moveType: PageMoveType;
     priorityType: number;
     stepAnime: boolean;
     through: boolean;
@@ -305,9 +313,9 @@ declare namespace RPG {
   export interface Image {
     tileId: number;
     characterName: string;
-    direction: number;
-    pattern: number;
-    characterIndex: number;
+    direction: Direction;
+    pattern: AnimationPattern;
+    characterIndex: CharacterIndex;
   }
 
   export interface PageList {
@@ -339,7 +347,7 @@ declare namespace RPG {
 
   export interface Airship {
     bgm: BattleBgm;
-    characterIndex: number;
+    characterIndex: CharacterIndex;
     characterName: string;
     startMapId: number;
     startX: number;
