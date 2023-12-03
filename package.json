@@ -8,6 +8,7 @@
     "dist/rmmz.js"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc lib/rmmz.ts --outDir dist/",
     "docs": "webdoc -R README.md",
     "lint": "eslint lib/rmmz*/*.ts lib/*.ts",
