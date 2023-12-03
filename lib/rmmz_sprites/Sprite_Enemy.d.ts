@@ -11,6 +11,8 @@ declare class Sprite_Enemy extends Sprite_Battler {
   private _shake: number;
   private _stateIconSprite: Sprite_StateIcon;
 
+  public loadBitmap(): void;
+
   public createStateIconSprite(): void;
   public updateStateSprite(): void;
 
