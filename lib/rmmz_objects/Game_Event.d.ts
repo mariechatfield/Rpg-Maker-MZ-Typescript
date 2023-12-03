@@ -1,8 +1,11 @@
 import { Game_Character } from ".";
 import { RPG } from "../RPG";
-import { EventTrigger } from "../constants/events";
-import { PageMoveType } from "../constants/page";
-import { AnimationPattern, Direction } from "../constants/sprites";
+import {
+  EventTrigger,
+  PageMoveType,
+  AnimationPattern,
+  Direction,
+} from "../rmmz";
 
 declare class Game_Event extends Game_Character {
   public _mapId: number;

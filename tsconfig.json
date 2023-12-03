@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
+    "module": "system",
     "moduleResolution": "node",
     "lib": ["ES6", "ES5", "ES2015.Iterable", "DOM", "DOM.Iterable"],
     "declaration": true,
-    "noEmit": true,
+    "noEmit": false,
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": false,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outFile": "./dist/index.js"
   },
   "include": ["./lib/**/*.ts"]
 }

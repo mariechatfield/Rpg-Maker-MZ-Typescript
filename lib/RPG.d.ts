@@ -1,10 +1,11 @@
-import { PageMoveSpeed, PageMoveType } from "./constants/page";
 import {
   AnimationPattern,
   CharacterIndex,
   Direction,
   FaceIndex,
-} from "./constants/sprites";
+  PageMoveSpeed,
+  PageMoveType,
+} from "./rmmz";
 
 declare namespace RPG {
   export interface Data {

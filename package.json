@@ -2,11 +2,12 @@
   "name": "@niokasgami/rpg-maker-mz-typescript",
   "version": "0.1.1",
   "description": "Type definitions for the RPG Maker MZ core script",
-  "main": "index.js",
+  "main": "dist/rmmz.js",
   "files": [
     "lib"
   ],
   "scripts": {
+    "build": "tsc lib/rmmz.ts --outDir dist/",
     "docs": "webdoc -R README.md",
     "lint": "eslint lib/rmmz*/*.ts lib/*.ts",
     "lint:fix": "npm run lint --fix",

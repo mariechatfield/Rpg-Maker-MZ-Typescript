@@ -1,6 +1,5 @@
 import { Game_CharacterBase, Game_Item } from ".";
-import { RPG } from "../RPG";
-import { CharacterIndex, FaceIndex } from "../constants/sprites";
+import { CharacterIndex, FaceIndex } from "../rmmz";
 
 declare class Game_Character extends Game_CharacterBase {
   public _actorId: 0;

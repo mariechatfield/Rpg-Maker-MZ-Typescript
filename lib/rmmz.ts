@@ -6,6 +6,65 @@ export enum EventTrigger {
   Parallel = 4,
 }
 
+export enum PageMoveType {
+  Fixed = 0,
+  Random = 1,
+  Approach = 2,
+  Custom = 3,
+}
+
+export enum PageMoveSpeed {
+  Slower_x8 = 0,
+  Slower_x4 = 1,
+  Slower_x2 = 2,
+  Normal = 3,
+  Faster_x2 = 4,
+  Faster_x4 = 5,
+}
+
+export enum PageMoveFreq {
+  Lowest = 0,
+  Lower = 1,
+  Normal = 2,
+  Higher = 3,
+  Highest = 4,
+}
+
+export enum CharacterIndex {
+  TopRow_1 = 0,
+  TopRow_2 = 1,
+  TopRow_3 = 2,
+  TopRow_4 = 3,
+  BottomRow_1 = 4,
+  BottomRow_2 = 5,
+  BottomRow_3 = 6,
+  BottomRow_4 = 7,
+}
+
+export enum AnimationPattern {
+  Frame1 = 0,
+  Frame2 = 1,
+  Frame3 = 2,
+}
+
+export enum Direction {
+  Down = 2,
+  Left = 4,
+  Right = 6,
+  Up = 8,
+}
+
+export enum FaceIndex {
+  TopRow_1 = 0,
+  TopRow_2 = 1,
+  TopRow_3 = 2,
+  TopRow_4 = 3,
+  BottomRow_1 = 4,
+  BottomRow_2 = 5,
+  BottomRow_3 = 6,
+  BottomRow_4 = 7,
+}
+
 enum Menu {
   ShowTextBox = 101,
   LineOfText = 401,
