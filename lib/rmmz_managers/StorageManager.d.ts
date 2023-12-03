@@ -1,4 +1,4 @@
-import Pako from "pako";
+import * as Pako from "pako";
 
 declare namespace StorageManager {
   export function isLocalMode(): boolean;

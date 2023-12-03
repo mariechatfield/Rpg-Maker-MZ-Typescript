@@ -9,7 +9,8 @@
   "scripts": {
     "docs": "webdoc -R README.md",
     "lint": "eslint lib/rmmz*/*.ts lib/*.ts",
-    "lint:fix": "npm run lint --fix"
+    "lint:fix": "npm run lint --fix",
+    "type-check": "tsc --noEmit lib/rmmz*/*.ts lib/*.ts"
   },
   "types": "./lib/index.d.ts",
   "repository": {

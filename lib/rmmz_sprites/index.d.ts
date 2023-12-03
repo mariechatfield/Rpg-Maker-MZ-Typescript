@@ -3,6 +3,9 @@ export * from "./Sprite_Character";
 
 export * from "./Sprite_Clickable";
 export * from "./Sprite_Battler";
+export * from "./Sprite_StateIcon";
+export * from "./Sprite_Actor";
+export * from "./Sprite_Enemy";
 
 export * from "./Sprite_Damage";
 
