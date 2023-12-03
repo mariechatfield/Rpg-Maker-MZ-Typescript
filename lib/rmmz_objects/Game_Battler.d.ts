@@ -38,6 +38,8 @@ declare namespace Game_Battler {
 declare abstract class Game_Battler extends Game_BattlerBase {
   constructor();
 
+  public initialize(): void;
+
   public clearDamagePopup(): void;
   public clearWeaponAnimation(): void;
   public clearEffect(): void;

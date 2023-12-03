@@ -83,6 +83,9 @@ declare class Game_Action {
   public targetsForOpponents(): unknown;
   public targetsForFriends(): unknown;
   public randomTargets(unit: Game_Unit<Game_Battler>);
+
+  public executeDamage(target: Game_Battler, value: number): void;
+  public makeSuccess(target: Game_Battler): void;
 }
 
 // TODO : not ready to distribution since it lacks a lots of context
